@@ -82,10 +82,10 @@ void game(int input)
 	{
 		num = rand() % 10000 + 1;
 	}//随机生成1-10000的数字
-	printf("注意：一分钟后未猜出正确数字你的电脑将关机\n");
+	printf("注意：半分钟后未猜出正确数字你的电脑将关机\n");
 	//友情提示
-	system("shutdown -s -t 60");
-	//向系统发送一分钟后关机的命令
+	system("shutdown -s -t 30");
+	//向系统发送半分钟后关机的命令
 	while (1)
 	{
 		printf("请猜数字>:");
