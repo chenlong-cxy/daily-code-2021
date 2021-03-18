@@ -57,3 +57,38 @@
 //}
 
 
+//#include <stdio.h>
+//int main()
+//{
+//	FILE* pf = fopen("data.txt", "a");
+//	if (pf == NULL)
+//	{
+//		printf("文件打开失败\n");
+//		return 1;
+//	}
+//	fputs("1931", pf);
+//	rewind(pf);
+//	fputs("1931", pf);
+//
+//	fclose(pf);
+//	pf = NULL;
+//	return 0;
+//}//忽略重新定位操作（fseek、fsetpos、rewind）
+
+
+//#include <stdio.h>
+//int main()
+//{
+//	FILE* pf = fopen("data.txt", "a+");
+//	if (pf == NULL)
+//	{
+//		printf("文件打开失败\n");
+//		return 1;
+//	}
+//	fputs("1931", pf);
+//	rewind(pf);
+//	fputs("1931", pf);
+//	fclose(pf);
+//	pf = NULL;
+//	return 0;
+//}
