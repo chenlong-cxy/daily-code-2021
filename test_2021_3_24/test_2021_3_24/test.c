@@ -66,11 +66,30 @@
 //}
 
 
+//#include <stdio.h>
+//int main()
+//{
+//	fseek(pf, 0, SEEK_END);//将文件指针置于文件末尾
+//	int FileLen = ftell(pf);//求文件指针相对于文件起始位置的偏移量
+//	fseek(pf, 0, SEEK_SET);//将文件指针放回文件开头
+//	return 0;
+//}
+
+//#include <stdio.h>
+//#include <string.h>
+//int main()
+//{
+//	char arr[3] = { 0 };
+//	strcpy(arr, "龙");
+//	printf("%s\n", arr);
+//	return 0;
+//}
+
+
 #include <stdio.h>
 int main()
 {
-	fseek(pf, 0, SEEK_END);//将文件指针置于文件末尾
-	int FileLen = ftell(pf);//求文件指针相对于文件起始位置的偏移量
-	fseek(pf, 0, SEEK_SET);//将文件指针放回文件开头
+	char arr[] = "西华师范大学";
+	printf("%d\n", sizeof(arr));//13
 	return 0;
 }
